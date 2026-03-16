@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathan Patterson | Project Journal</title>
+    <meta name="description" content="A journal-style archive of Nathan Patterson&#x27;s projects in research, teaching, automation, fabrication, and simulation.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/site.js"></script>
+  </head>
+  <body>
+    
+    
+    <header class="site-header">
+      <div class="shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">Project journal</span>
+          <span class="brand-title">Nathan Patterson</span>
+          <span class="brand-subtitle">Research, teaching, and build notes</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="index.html#projects">Projects</a>
+          <a class="nav-link" href="index.html#about">About</a>
+          <a class="nav-link" href="mailto:nathanjpatterson@gmail.com">Email</a>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div class="panel hero-copy">
+            <p class="eyebrow">GitHub Pages refresh</p>
+            <h1 class="headline">Things I've built, taught, tested, and occasionally overcomplicated.</h1>
+            <p class="lede">This site is less a formal portfolio and more a running notebook. It gathers the projects I keep coming back to when I want to explain how I work: teaching tools, automation builds, simulation work, startup scars, and a few projects that only happened because they sounded fun.</p>
+            <div class="button-row">
+              <a class="button button-primary" href="#projects">Browse the journal</a>
+              <a class="button button-secondary" href="mailto:nathanjpatterson@gmail.com">Say hello</a>
+            </div>
+            <div class="hero-stats" aria-label="Site stats">
+              <div class="stat">
+                <span class="mini-label">Entries</span>
+                <strong>12</strong>
+                <span class="lede-muted">documented projects</span>
+              </div>
+              <div class="stat">
+                <span class="mini-label">Threads</span>
+                <strong>4</strong>
+                <span class="lede-muted">research, teaching, automation, fabrication</span>
+              </div>
+              <div class="stat">
+                <span class="mini-label">Style</span>
+                <strong>Notebook</strong>
+                <span class="lede-muted">more journal than brochure</span>
+              </div>
+            </div>
+          </div>
+          <aside class="panel hero-note">
+            <p class="eyebrow">How to read this</p>
+            <ul class="note-list">
+              <li>Every project has its own page so notes, media, and updates can stay grouped together.</li>
+              <li>Filters below make it easier to jump between teaching work, automation builds, and older experiments.</li>
+              <li>Images can be added over time without changing the structure of the site again.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Working themes</p>
+              <h2 class="section-title">The projects tend to cluster in a few directions.</h2>
+            </div>
+          </div>
+          <div class="section-grid">
+            <article class="panel section-card reveal">
+              <p class="eyebrow">Research + simulation</p>
+              <p class="section-copy">Tools for understanding physical systems better, whether that means wind tunnel fixtures, CFD pipelines, or remote lab environments.</p>
+            </article>
+            <article class="panel section-card reveal">
+              <p class="eyebrow">Teaching builds</p>
+              <p class="section-copy">Projects that exist because students learn more when lab gear is accessible, playful, and a little more ambitious than it strictly needs to be.</p>
+            </article>
+            <article class="panel section-card reveal">
+              <p class="eyebrow">Automation for fun</p>
+              <p class="section-copy">Machines that serve drinks, route printer jobs, or otherwise solve problems nobody asked me to solve in the most entertaining way available.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Project index</p>
+              <h2 class="section-title">Browse by idea, not by resume category.</h2>
+            </div>
+            <p class="count-label" data-count>12 entries showing</p>
+          </div>
+          <div class="filters" role="toolbar" aria-label="Project filters">
+            <button class="filter-button is-active" data-filter="all" type="button">All</button>
+            <button class="filter-button" data-filter="teaching" type="button">Teaching</button>
+            <button class="filter-button" data-filter="automation" type="button">Automation</button>
+            <button class="filter-button" data-filter="research" type="button">Research</button>
+            <button class="filter-button" data-filter="simulation" type="button">Simulation</button>
+            <button class="filter-button" data-filter="fabrication" type="button">Fabrication</button>
+            <button class="filter-button" data-filter="startup" type="button">Startup</button>
+            <button class="filter-button" data-filter="games" type="button">Games</button>
+          </div>
+          <div class="project-grid">
+            
+            <article class="panel project-card reveal theme-research" data-tags="research simulation teaching ml">
+              <a href="projects/project-one-g62zx/">
+                <div>
+                  <p class="project-card-label">Ongoing research</p>
+                  <h3 class="project-card-title">Virtual Wind Tunnel</h3>
+                </div>
+                <p class="project-card-summary">A CFD workflow that turns high-performance simulation and mesh graph neural networks into a more approachable design tool for students.</p>
+                <div class="tag-row"><span class="chip">research</span><span class="chip">simulation</span><span class="chip">teaching</span><span class="chip">ml</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-research" data-tags="research hardware sensing teaching">
+              <a href="projects/project-two-awpey/">
+                <div>
+                  <p class="project-card-label">2023-2024</p>
+                  <h3 class="project-card-title">6-Axis Load Cell</h3>
+                </div>
+                <p class="project-card-summary">A wind tunnel fixture that expanded student measurements from one or two axes to full six-axis force and moment data.</p>
+                <div class="tag-row"><span class="chip">research</span><span class="chip">hardware</span><span class="chip">sensing</span><span class="chip">teaching</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-fabrication" data-tags="fabrication software design-tools">
+              <a href="projects/project-three-434xd/">
+                <div>
+                  <p class="project-card-label">2023</p>
+                  <h3 class="project-card-title">Laser Cut Model Maker</h3>
+                </div>
+                <p class="project-card-summary">A Python tool that converts arbitrary STL models into interlocking slice files for laser-cut physical assemblies.</p>
+                <div class="tag-row"><span class="chip">fabrication</span><span class="chip">software</span><span class="chip">design-tools</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-teaching" data-tags="teaching automation robotics hardware">
+              <a href="projects/cobot-bartender-lab-project/">
+                <div>
+                  <p class="project-card-label">2024</p>
+                  <h3 class="project-card-title">CoBot Bartender Lab</h3>
+                </div>
+                <p class="project-card-summary">A collaborative robot and PLC final project that turns an automation lab into a drink-making challenge students actually want to solve.</p>
+                <div class="tag-row"><span class="chip">teaching</span><span class="chip">automation</span><span class="chip">robotics</span><span class="chip">hardware</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-teaching" data-tags="teaching automation plc electronics">
+              <a href="projects/factory-40-plc-modifications/">
+                <div>
+                  <p class="project-card-label">2023-2024</p>
+                  <h3 class="project-card-title">Factory 4.0 &amp; PLC Modifications</h3>
+                </div>
+                <p class="project-card-summary">A modification plan that turned a single-PLC factory trainer into a five-group lab platform, plus custom encoder hardware to work around timing problems.</p>
+                <div class="tag-row"><span class="chip">teaching</span><span class="chip">automation</span><span class="chip">plc</span><span class="chip">electronics</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-ai" data-tags="ai teaching web automation">
+              <a href="projects/llm-course-designer/">
+                <div>
+                  <p class="project-card-label">2023-present</p>
+                  <h3 class="project-card-title">LLM Course Designer</h3>
+                </div>
+                <p class="project-card-summary">A web-based course-planning assistant that uses LLMs to generate modules, lectures, slide decks, quizzes, and exports for teaching workflows.</p>
+                <div class="tag-row"><span class="chip">ai</span><span class="chip">teaching</span><span class="chip">web</span><span class="chip">automation</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-automation" data-tags="automation hardware robotics fun">
+              <a href="projects/automated-bartender/">
+                <div>
+                  <p class="project-card-label">Iterative party build</p>
+                  <h3 class="project-card-title">Automated Bartender</h3>
+                </div>
+                <p class="project-card-summary">A neighborhood-party machine that evolved from a serial-controlled drink dispenser into a speech-enabled, multi-controller cocktail robot.</p>
+                <div class="tag-row"><span class="chip">automation</span><span class="chip">hardware</span><span class="chip">robotics</span><span class="chip">fun</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-teaching" data-tags="teaching simulation mechatronics software">
+              <a href="projects/project-four-h4snk/">
+                <div>
+                  <p class="project-card-label">Pandemic-era teaching tools</p>
+                  <h3 class="project-card-title">Mechaiddqd</h3>
+                </div>
+                <p class="project-card-summary">A collection of mechatronics simulators that reproduced lab hardware and made off-hours or remote access much more realistic for students.</p>
+                <div class="tag-row"><span class="chip">teaching</span><span class="chip">simulation</span><span class="chip">mechatronics</span><span class="chip">software</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-teaching" data-tags="teaching simulation web unity">
+              <a href="projects/fluid-mechanics-lab-simulators/">
+                <div>
+                  <p class="project-card-label">2020 and beyond</p>
+                  <h3 class="project-card-title">Fluid Mechanics Lab Simulators</h3>
+                </div>
+                <p class="project-card-summary">Remote fluid mechanics experiments built in Unity and MATLAB so lab-heavy coursework could continue when students could not access campus equipment.</p>
+                <div class="tag-row"><span class="chip">teaching</span><span class="chip">simulation</span><span class="chip">web</span><span class="chip">unity</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-fabrication" data-tags="fabrication teaching automation hardware">
+              <a href="projects/automated-3d-printer-submission-system/">
+                <div>
+                  <p class="project-card-label">2016-2024</p>
+                  <h3 class="project-card-title">Automated 3D Printer Farm</h3>
+                </div>
+                <p class="project-card-summary">A student-facing printer platform, course rollout, and automated submission pipeline that supported thousands of prints over roughly six years.</p>
+                <div class="tag-row"><span class="chip">fabrication</span><span class="chip">teaching</span><span class="chip">automation</span><span class="chip">hardware</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-startup" data-tags="startup hardware business fabrication">
+              <a href="projects/radiant-fabrication/">
+                <div>
+                  <p class="project-card-label">2011-2015</p>
+                  <h3 class="project-card-title">Radiant Fabrication</h3>
+                </div>
+                <p class="project-card-summary">A startup chapter centered on commercializing a child-friendly 3D printing platform and learning every job a small company can throw at one person.</p>
+                <div class="tag-row"><span class="chip">startup</span><span class="chip">hardware</span><span class="chip">business</span><span class="chip">fabrication</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+            <article class="panel project-card reveal theme-games" data-tags="games education leadership unity">
+              <a href="projects/virulent-ios-game/">
+                <div>
+                  <p class="project-card-label">2009-2011</p>
+                  <h3 class="project-card-title">Virulent</h3>
+                </div>
+                <p class="project-card-summary">An educational iOS game project that blended science communication, grant work, team leadership, and game production into one early-career chapter.</p>
+                <div class="tag-row"><span class="chip">games</span><span class="chip">education</span><span class="chip">leadership</span><span class="chip">unity</span></div>
+                <p class="project-card-period">Open notes</p>
+              </a>
+            </article>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="shell">
+        <p class="footer-note">Built as a simple GitHub Pages notebook so projects stay easy to document and update.</p>
+        <a class="footer-note" href="mailto:nathanjpatterson@gmail.com">nathanjpatterson@gmail.com</a>
+      </div>
+    </footer>
+    
+    
+  </body>
+</html>

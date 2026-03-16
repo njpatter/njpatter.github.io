@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Wind Tunnel | Nathan Patterson</title>
+    <meta name="description" content="A CFD workflow that turns high-performance simulation and mesh graph neural networks into a more approachable design tool for students.">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script defer src="../../assets/js/site.js"></script>
+  </head>
+  <body class="project-body">
+    
+    
+    <header class="site-header">
+      <div class="shell">
+        <a class="brand" href="../../index.html">
+          <span class="brand-mark">Project journal</span>
+          <span class="brand-title">Nathan Patterson</span>
+          <span class="brand-subtitle">Research, teaching, and build notes</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="../../index.html#projects">Projects</a>
+          <a class="nav-link" href="../../index.html#about">About</a>
+          <a class="nav-link" href="mailto:nathanjpatterson@gmail.com">Email</a>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="project-page">
+      <div class="shell">
+        <a class="back-link" href="../../index.html#projects">Back to project journal</a>
+        <section class="project-head">
+          <article class="panel project-intro">
+            <p class="eyebrow">Project notes</p>
+            <div class="meta-pills">
+              <span class="chip chip-status">Active</span>
+              <span class="chip">Ongoing research</span>
+            </div>
+            <h1 class="project-title">Virtual Wind Tunnel</h1>
+            <p class="project-summary">A CFD workflow that turns high-performance simulation and mesh graph neural networks into a more approachable design tool for students.</p>
+            <div class="tag-row"><span class="chip">research</span><span class="chip">simulation</span><span class="chip">teaching</span><span class="chip">ml</span></div>
+          </article>
+          
+        <div class="project-banner">
+          <div class="banner-mark">V</div>
+          <div class="banner-copy">
+            <p class="eyebrow">Active</p>
+            <h2 class="subheading">Virtual Wind Tunnel</h2>
+            <p class="project-summary">Image archive coming soon. The page is ready for project photos whenever they are added.</p>
+          </div>
+        </div>
+        
+        </section>
+
+        <section class="project-layout">
+          <div class="stack">
+            <article class="panel project-story">
+              <p class="eyebrow">What happened</p>
+              <h2 class="subheading">Build story</h2>
+              <div class="story-copy">
+                <p>I created the Virtual Wind Tunnel to transform students&#x27; use of Computational Fluid Dynamics (CFD) software using HPC and Mesh Graph Neural Networks. I wanted CFD to feel more like a design analysis tool and aerodynamic tutor than a lesson in numerical methods.</p><p>Students upload a 3D model through a website and specify a Reynolds number for the flow. From there, a fully automated CFD analysis runs in OpenFOAM on a local compute cluster at a fidelity their personal laptops could not realistically support.</p><p>To make the output more useful than a single simulation, the system programmatically generates geometric variations and runs a subset of them through the same automated CFD process. That dataset is then used to train a Mesh Graph Neural Network for inference on the remaining variants.</p><p>The final output is designed to help students make decisions. Instead of receiving raw solver output alone, they get force reports and suggestions on where the geometry could change to support aerodynamic goals such as lowering forces or shifting the center of pressure.</p>
+              </div>
+            </article>
+
+            <article class="panel project-highlights">
+              <p class="eyebrow">Why it mattered</p>
+              <h2 class="subheading">Project notes</h2>
+              <ul class="highlight-list">
+                <li>Built an automated student-facing CFD workflow around OpenFOAM and a local compute cluster.</li><li>Generated geometric variants to create a training dataset for mesh-based neural inference.</li><li>Focused the output on actionable design guidance rather than solver complexity.</li>
+              </ul>
+            </article>
+            
+          </div>
+
+          <aside class="stack">
+            <section class="panel sidebar-card">
+              <p class="eyebrow">Snapshot</p>
+              <ul class="meta-list">
+                <li><strong>Period</strong><span class="meta-text">Ongoing research</span></li>
+                <li><strong>Status</strong><span class="meta-text">Active</span></li>
+                <li><strong>Tools</strong><span class="meta-text">OpenFOAM, NVIDIA Modulus, SLURM</span></li>
+                <li><strong>Languages</strong><span class="meta-text">Python, C++, Ruby, Bash, JavaScript</span></li>
+              </ul>
+            </section>
+            
+    <section class="panel link-card">
+      <p class="eyebrow">Related links</p>
+      <ul class="link-list">
+        <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/cae.22216?casa_token=BX136GU-8w0AAAAA%3AE2GcwRtUppjkz1Mfoa-IFVWXnijuPfnfXLDaKEhYe2QwGBncua0ZV9eSH626G4WB716JdIShfFTL2UCJpg" target="_blank" rel="noreferrer">Earlier research paper</a></li>
+      </ul>
+    </section>
+    
+            
+          </aside>
+        </section>
+
+        <nav class="project-footer-nav" aria-label="Project navigation">
+          <a class="footer-chip" href="../../index.html#projects">Back to all entries</a> <a class="footer-chip" href="../project-two-awpey/">Next: 6-Axis Load Cell</a>
+        </nav>
+      </div>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="shell">
+        <p class="footer-note">Built as a simple GitHub Pages notebook so projects stay easy to document and update.</p>
+        <a class="footer-note" href="mailto:nathanjpatterson@gmail.com">nathanjpatterson@gmail.com</a>
+      </div>
+    </footer>
+    
+    
+  </body>
+</html>

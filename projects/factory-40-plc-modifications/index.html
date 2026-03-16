@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Factory 4.0 &amp; PLC Modifications | Nathan Patterson</title>
+    <meta name="description" content="A modification plan that turned a single-PLC factory trainer into a five-group lab platform, plus custom encoder hardware to work around timing problems.">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script defer src="../../assets/js/site.js"></script>
+  </head>
+  <body class="project-body">
+    
+    
+    <header class="site-header">
+      <div class="shell">
+        <a class="brand" href="../../index.html">
+          <span class="brand-mark">Project journal</span>
+          <span class="brand-title">Nathan Patterson</span>
+          <span class="brand-subtitle">Research, teaching, and build notes</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="../../index.html#projects">Projects</a>
+          <a class="nav-link" href="../../index.html#about">About</a>
+          <a class="nav-link" href="mailto:nathanjpatterson@gmail.com">Email</a>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="project-page">
+      <div class="shell">
+        <a class="back-link" href="../../index.html#projects">Back to project journal</a>
+        <section class="project-head">
+          <article class="panel project-intro">
+            <p class="eyebrow">Project notes</p>
+            <div class="meta-pills">
+              <span class="chip chip-status">Completed</span>
+              <span class="chip">2023-2024</span>
+            </div>
+            <h1 class="project-title">Factory 4.0 &amp; PLC Modifications</h1>
+            <p class="project-summary">A modification plan that turned a single-PLC factory trainer into a five-group lab platform, plus custom encoder hardware to work around timing problems.</p>
+            <div class="tag-row"><span class="chip">teaching</span><span class="chip">automation</span><span class="chip">plc</span><span class="chip">electronics</span></div>
+          </article>
+          
+        <div class="project-banner">
+          <div class="banner-mark">F</div>
+          <div class="banner-copy">
+            <p class="eyebrow">Completed</p>
+            <h2 class="subheading">Factory 4.0 &amp; PLC Modifications</h2>
+            <p class="project-summary">Image archive coming soon. The page is ready for project photos whenever they are added.</p>
+          </div>
+        </div>
+        
+        </section>
+
+        <section class="project-layout">
+          <div class="stack">
+            <article class="panel project-story">
+              <p class="eyebrow">What happened</p>
+              <h2 class="subheading">Build story</h2>
+              <div class="story-copy">
+                <p>The Fischer Technik Factory 4.0 is a strong PLC teaching platform, but the stock configuration is hard to scale for larger lab sections. Before purchasing, I planned a set of modifications that would split the standard single-controller setup into five lower-cost PLC stations.</p><p>That change let up to five groups work with the factory models at the same time, which dramatically improved how much hands-on time each student group had during lab.</p><p>There was one frustrating complication. An error in the Fischer Technik PLC documentation meant the purchased PLCs had slower cycle times than the encoder pulses coming from the factory motors.</p><p>To recover from that mismatch, I designed a custom PCB around a Teensy microcontroller that combines encoder pulses and outputs fewer, longer pulses so the PLCs can read the motion correctly.</p>
+              </div>
+            </article>
+
+            <article class="panel project-highlights">
+              <p class="eyebrow">Why it mattered</p>
+              <h2 class="subheading">Project notes</h2>
+              <ul class="highlight-list">
+                <li>Reworked the lab setup so five student groups could use the equipment in parallel.</li><li>Designed a custom PCB to clean up encoder timing for slower PLC hardware.</li><li>Turned a purchasing problem into an opportunity to improve the overall lab experience.</li>
+              </ul>
+            </article>
+            
+          </div>
+
+          <aside class="stack">
+            <section class="panel sidebar-card">
+              <p class="eyebrow">Snapshot</p>
+              <ul class="meta-list">
+                <li><strong>Period</strong><span class="meta-text">2023-2024</span></li>
+                <li><strong>Status</strong><span class="meta-text">Completed</span></li>
+                <li><strong>Tools</strong><span class="meta-text">KiCad, OpenPLC</span></li>
+                <li><strong>Languages</strong><span class="meta-text">Structured Text</span></li>
+              </ul>
+            </section>
+            
+            
+          </aside>
+        </section>
+
+        <nav class="project-footer-nav" aria-label="Project navigation">
+          <a class="footer-chip" href="../cobot-bartender-lab-project/">Previous: CoBot Bartender Lab</a> <a class="footer-chip" href="../../index.html#projects">Back to all entries</a> <a class="footer-chip" href="../llm-course-designer/">Next: LLM Course Designer</a>
+        </nav>
+      </div>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="shell">
+        <p class="footer-note">Built as a simple GitHub Pages notebook so projects stay easy to document and update.</p>
+        <a class="footer-note" href="mailto:nathanjpatterson@gmail.com">nathanjpatterson@gmail.com</a>
+      </div>
+    </footer>
+    
+    
+  </body>
+</html>

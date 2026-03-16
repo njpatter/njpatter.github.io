@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "project-one-g62zx",
+    "title": "Virtual Wind Tunnel",
+    "period": "Ongoing research",
+    "status": "Active",
+    "theme": "research",
+    "summary": "A CFD workflow that turns high-performance simulation and mesh graph neural networks into a more approachable design tool for students.",
+    "tags": ["research", "simulation", "teaching", "ml"],
+    "body": [
+      "I created the Virtual Wind Tunnel to transform students' use of Computational Fluid Dynamics (CFD) software using HPC and Mesh Graph Neural Networks. I wanted CFD to feel more like a design analysis tool and aerodynamic tutor than a lesson in numerical methods.",
+      "Students upload a 3D model through a website and specify a Reynolds number for the flow. From there, a fully automated CFD analysis runs in OpenFOAM on a local compute cluster at a fidelity their personal laptops could not realistically support.",
+      "To make the output more useful than a single simulation, the system programmatically generates geometric variations and runs a subset of them through the same automated CFD process. That dataset is then used to train a Mesh Graph Neural Network for inference on the remaining variants.",
+      "The final output is designed to help students make decisions. Instead of receiving raw solver output alone, they get force reports and suggestions on where the geometry could change to support aerodynamic goals such as lowering forces or shifting the center of pressure."
+    ],
+    "highlights": [
+      "Built an automated student-facing CFD workflow around OpenFOAM and a local compute cluster.",
+      "Generated geometric variants to create a training dataset for mesh-based neural inference.",
+      "Focused the output on actionable design guidance rather than solver complexity."
+    ],
+    "tools": ["OpenFOAM", "NVIDIA Modulus", "SLURM"],
+    "languages": ["Python", "C++", "Ruby", "Bash", "JavaScript"],
+    "links": [
+      {
+        "label": "Earlier research paper",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/cae.22216?casa_token=BX136GU-8w0AAAAA%3AE2GcwRtUppjkz1Mfoa-IFVWXnijuPfnfXLDaKEhYe2QwGBncua0ZV9eSH626G4WB716JdIShfFTL2UCJpg"
+      }
+    ]
+  },
+  {
+    "slug": "project-two-awpey",
+    "title": "6-Axis Load Cell",
+    "period": "2023-2024",
+    "status": "Completed",
+    "theme": "research",
+    "summary": "A wind tunnel fixture that expanded student measurements from one or two axes to full six-axis force and moment data.",
+    "tags": ["research", "hardware", "sensing", "teaching"],
+    "body": [
+      "I created a 6-axis load cell test fixture to make it easier for students to use MSOE's wind tunnel while also improving the quality of the data they could collect.",
+      "Older fixtures relied on spring scales or coupled load cells and only exposed one or two axes. This setup uses six inexpensive load cells, a low-cost microcontroller, a 3D printed Stewart-platform-style arrangement, and a laser-cut mounting fixture so students can capture forces and moments around all three axes.",
+      "At first I used calibration data to fit a linear coefficient matrix. Students then did exactly what students do best and pushed the fixture beyond the range where that assumption held.",
+      "To handle those nonlinear cases, I collected more calibration data, trained a shallow neural network for inference of applied forces and moments, and integrated it into the MATLAB data collection workflow the students were already using."
+    ],
+    "highlights": [
+      "Moved wind tunnel labs from limited force readings to full six-axis data collection.",
+      "Designed the fixture, circuits, and software and fabricated the custom components.",
+      "Replaced a linear calibration model with a neural-network-based inference step when student designs exceeded expected ranges."
+    ],
+    "tools": ["SolidWorks", "PrusaSlicer", "LightBurn", "MATLAB"],
+    "languages": ["C++", "MATLAB"]
+  },
+  {
+    "slug": "project-three-434xd",
+    "title": "Laser Cut Model Maker",
+    "period": "2023",
+    "status": "Completed",
+    "theme": "fabrication",
+    "summary": "A Python tool that converts arbitrary STL models into interlocking slice files for laser-cut physical assemblies.",
+    "tags": ["fabrication", "software", "design-tools"],
+    "body": [
+      "As a kid, I loved assembling dinosaur skeleton kits cut from thin plywood sheets. I wanted the same sort of object, but for any 3D model and any material thickness.",
+      "I wrote a Python program that loads STL geometry, creates interlocking slices in chosen directions at variable intervals or specific locations, and outputs DXF files ready for laser cutting.",
+      "The result is a lightweight way to move from a digital model to a physical study object without needing a 3D printer or a lot of post-processing."
+    ],
+    "highlights": [
+      "Takes arbitrary STL input and turns it into laser-ready DXF output.",
+      "Supports variable slice directions, intervals, and locations.",
+      "Built to make playful physical model-making more accessible and flexible."
+    ],
+    "tools": ["Python"],
+    "languages": ["Python"]
+  },
+  {
+    "slug": "cobot-bartender-lab-project",
+    "title": "CoBot Bartender Lab",
+    "period": "2024",
+    "status": "Completed",
+    "theme": "teaching",
+    "summary": "A collaborative robot and PLC final project that turns an automation lab into a drink-making challenge students actually want to solve.",
+    "tags": ["teaching", "automation", "robotics", "hardware"],
+    "body": [
+      "I wanted a final project for my Industrial Automation course that felt genuinely fun. Students already liked hearing about my automated bartender builds, so I turned that energy into a CoBot and PLC lab project.",
+      "Students had to program the PLC and collaborative robot to dispense four drinks in different sizes while coordinating buttons, a potentiometer, motor control, encoder feedback, and an ice-scooping task.",
+      "I reused the bottle clip and pump designs from my home bartender project, then built the rest specifically for the lab. The button stand, scoop holder, and cup rings were 3D printed, while the bottle stands and tray wedge were laser cut.",
+      "The signaling problem between 24V PLC hardware and 5V Arduino systems meant I also hand-soldered interface boards. It was not the most luxurious electronics job, but it let the setups work reliably enough for a teaching lab with a tight turnaround."
+    ],
+    "highlights": [
+      "Built three full lab setups in a couple of weeks during spare time at work.",
+      "Combined PLC logic, collaborative robot control, and custom hardware into one final project.",
+      "Used the entertainment value of a bartender to make automation coursework more memorable."
+    ],
+    "tools": ["SolidWorks", "PrusaSlicer", "LightBurn"],
+    "languages": ["C++", "Structured Text", "URScript"]
+  },
+  {
+    "slug": "factory-40-plc-modifications",
+    "title": "Factory 4.0 & PLC Modifications",
+    "period": "2023-2024",
+    "status": "Completed",
+    "theme": "teaching",
+    "summary": "A modification plan that turned a single-PLC factory trainer into a five-group lab platform, plus custom encoder hardware to work around timing problems.",
+    "tags": ["teaching", "automation", "plc", "electronics"],
+    "body": [
+      "The Fischer Technik Factory 4.0 is a strong PLC teaching platform, but the stock configuration is hard to scale for larger lab sections. Before purchasing, I planned a set of modifications that would split the standard single-controller setup into five lower-cost PLC stations.",
+      "That change let up to five groups work with the factory models at the same time, which dramatically improved how much hands-on time each student group had during lab.",
+      "There was one frustrating complication. An error in the Fischer Technik PLC documentation meant the purchased PLCs had slower cycle times than the encoder pulses coming from the factory motors.",
+      "To recover from that mismatch, I designed a custom PCB around a Teensy microcontroller that combines encoder pulses and outputs fewer, longer pulses so the PLCs can read the motion correctly."
+    ],
+    "highlights": [
+      "Reworked the lab setup so five student groups could use the equipment in parallel.",
+      "Designed a custom PCB to clean up encoder timing for slower PLC hardware.",
+      "Turned a purchasing problem into an opportunity to improve the overall lab experience."
+    ],
+    "tools": ["KiCad", "OpenPLC"],
+    "languages": ["Structured Text"]
+  },
+  {
+    "slug": "llm-course-designer",
+    "title": "LLM Course Designer",
+    "period": "2023-present",
+    "status": "Active",
+    "theme": "ai",
+    "summary": "A web-based course-planning assistant that uses LLMs to generate modules, lectures, slide decks, quizzes, and exports for teaching workflows.",
+    "tags": ["ai", "teaching", "web", "automation"],
+    "body": [
+      "I wanted hands-on experience with large language models while also dealing with MSOE's transition from quarters to semesters. That shift forced a lot of instructors to reorganize familiar material into new course structures, which made it a perfect real-world problem.",
+      "I built a Gradio-based interface with a Python backend and database support so multiple users could generate and manage content for different courses. The system uses prompt templates built from information entered by the instructor, and users can accept, edit, or replace LLM-generated output at each step.",
+      "The tool can generate course modules, expand them into lectures, populate Google Slides, insert relevant images, and export assessments to Canvas. It can also generate lecture videos using text-to-speech from slide transcripts.",
+      "Some parts were immediately useful during the semester transition, especially module and quiz generation. Long-form lecture generation was a different story and needed a lot of editing, which pushed my more recent work toward RAG, knowledge graphs, and reflection techniques."
+    ],
+    "highlights": [
+      "Built a multi-user workflow for course generation instead of a one-off prompt playground.",
+      "Connected generated content to practical outputs like slides, quizzes, and lecture video exports.",
+      "Learned quickly where LLMs helped and where they still needed much more structure."
+    ],
+    "tools": ["Gradio", "Google Slides", "Canvas LMS"],
+    "languages": ["Python"]
+  },
+  {
+    "slug": "automated-bartender",
+    "title": "Automated Bartender",
+    "period": "Iterative party build",
+    "status": "Active archive",
+    "theme": "automation",
+    "summary": "A neighborhood-party machine that evolved from a serial-controlled drink dispenser into a speech-enabled, multi-controller cocktail robot.",
+    "tags": ["automation", "hardware", "robotics", "fun"],
+    "body": [
+      "I rarely drink alcohol, but I do like building engineering projects that make people smile. When I learned my neighborhood hosts a large annual block party, I decided an automated bartender sounded like a reasonable contribution.",
+      "Version one used a Raspberry Pi touchscreen interface, a Teensy microcontroller, a serial protocol, and a forest of stepper motor drivers wired across a breadboard. It worked, and it served a lot of drinks, including an alarming number of late-night Long Islands.",
+      "When the party finally returned after COVID interruptions, I wanted the second version to feel more theatrical. I redesigned the enclosure into a giant upside-down flask, used kerf bending and custom jigs to shape the plywood body, and added a camera-driven ordering flow with text-to-speech, speech-to-text, and fuzzy matching.",
+      "Version two also replaced the wiring sprawl with repaired and modified 3D printer controller boards, which made testing easier and let me run multiple steppers in parallel. I also redesigned the peristaltic pumps so they could be press-fit by hand instead of turning assembly and disassembly into a chore."
+    ],
+    "highlights": [
+      "Served hundreds of drinks across multiple parties with two major hardware iterations.",
+      "Moved from touchscreen ordering to a camera and voice-driven interaction flow.",
+      "Used the project to experiment with enclosure design, mechatronics packaging, and human-facing automation."
+    ],
+    "tools": ["SolidWorks", "OpenSCAD", "PrusaSlicer", "LightBurn"],
+    "languages": ["C++", "Python"]
+  },
+  {
+    "slug": "project-four-h4snk",
+    "title": "Mechaiddqd",
+    "period": "Pandemic-era teaching tools",
+    "status": "Completed",
+    "theme": "teaching",
+    "summary": "A collection of mechatronics simulators that reproduced lab hardware and made off-hours or remote access much more realistic for students.",
+    "tags": ["teaching", "simulation", "mechatronics", "software"],
+    "body": [
+      "I originally built the Mechaiddqd mechatronics simulators to give students digital access to lab equipment outside of scheduled class time. When the COVID pandemic arrived, that idea stopped being a convenience and became a necessity.",
+      "The earliest versions were a handful of MATLAB scripts. Pandemic-era versions were rebuilt in Unity, packaged in a Windows installer, and updated automatically so I could keep distributing improvements without constant manual support.",
+      "A key design decision was to mimic the programming interface students were already using to control their Arduino hardware. That meant the transition between physical labs and simulator work felt much less artificial.",
+      "The simulator lineup included direct replicas of existing hardware like a robot arm and XY table, along with systems that were not feasible in the physical lab at the time, including a rollerball, candy sorter, and juice bar."
+    ],
+    "highlights": [
+      "Became critical during COVID when physical lab access disappeared.",
+      "Matched the existing Arduino-facing programming style to lower the learning curve.",
+      "Expanded beyond direct replicas into simulations of systems the physical lab did not yet have."
+    ],
+    "tools": ["Unity", "MATLAB"],
+    "languages": ["C#", "MATLAB"]
+  },
+  {
+    "slug": "fluid-mechanics-lab-simulators",
+    "title": "Fluid Mechanics Lab Simulators",
+    "period": "2020 and beyond",
+    "status": "Still assigned",
+    "theme": "teaching",
+    "summary": "Remote fluid mechanics experiments built in Unity and MATLAB so lab-heavy coursework could continue when students could not access campus equipment.",
+    "tags": ["teaching", "simulation", "web", "unity"],
+    "body": [
+      "When the pandemic disrupted in-person lab courses, I built a set of fluid mechanics simulators based on MSOE's main experiments so the course could still run remotely.",
+      "The collection included pressure-loss measurements in pipes and components, pitot-tube velocity profiling, falling-ball viscosity measurements, vortex shedding, and drag force estimation from wake measurements. I intentionally modeled the dynamic fluctuations students normally see in the physical experiments so the simulations would feel less sterile.",
+      "Some of the labs were distributed as downloadable executables with MATLAB scripts for live data collection, while the rest were published through a GitHub Pages site so students could run them in a browser.",
+      "Even after returning to in-person teaching, other instructors still assign them as homework and lab preparation, which is probably the strongest sign that they solved a real teaching problem."
+    ],
+    "highlights": [
+      "Kept a lab-based course running during a fully remote semester.",
+      "Blended browser-based delivery with downloadable experiences where needed.",
+      "Continued to stay useful after the original emergency need had passed."
+    ],
+    "tools": ["Unity", "MATLAB"],
+    "languages": ["C#", "MATLAB"],
+    "links": [
+      {
+        "label": "Fluid Mechanics simulator site",
+        "url": "https://njpatter.github.io/FluidMechanicsExperiments/"
+      }
+    ]
+  },
+  {
+    "slug": "automated-3d-printer-submission-system",
+    "title": "Automated 3D Printer Farm",
+    "period": "2016-2024",
+    "status": "Completed",
+    "theme": "fabrication",
+    "summary": "A student-facing printer platform, course rollout, and automated submission pipeline that supported thousands of prints over roughly six years.",
+    "tags": ["fabrication", "teaching", "automation", "hardware"],
+    "body": [
+      "I designed and built a 3D printer platform for students instead of just for myself. I sourced and tested components, negotiated educational and quantity discounts, and shared the bill of materials with the campus bookstore so enough kits could be ordered for entire classes.",
+      "The first version used laser-cut MDF parts and supported my self-proposed Design for Additive Manufacturing elective. Students taught me that a printer built for a classroom also has to survive being carried around constantly, so version two moved key parts to machined aluminum and added alignment features that reduced assembly mistakes.",
+      "I created the CAM programs, made fixturing for machining, and ran the vertical machining center. Those manufacturing changes cut the in-class assembly time from about three weeks to two while improving durability.",
+      "Alongside the hardware, I developed an automated email system that downloads STL attachments from MSOE addresses, slices each part in multiple orientations, chooses the fastest viable option, and starts the print automatically. The original printers lasted about six years, printed more than 3,000 parts, and the email workflow was later adapted to new departmental Prusa MK4 printers."
+    ],
+    "highlights": [
+      "Scaled from 25 printers in the first run to 35 in the second.",
+      "Reduced classroom assembly time while making the hardware more portable and durable.",
+      "Built an automated submission pipeline that removed a lot of technician overhead and printing mistakes."
+    ],
+    "tools": ["SolidWorks"],
+    "languages": ["C++", "Python"]
+  },
+  {
+    "slug": "radiant-fabrication",
+    "title": "Radiant Fabrication",
+    "period": "2011-2015",
+    "status": "Closed company",
+    "theme": "startup",
+    "summary": "A startup chapter centered on commercializing a child-friendly 3D printing platform and learning every job a small company can throw at one person.",
+    "tags": ["startup", "hardware", "business", "fabrication"],
+    "body": [
+      "Radiant Fabrication was my startup education in the most practical sense possible. It did not make me independently wealthy, but it taught me an enormous amount about building a company, developing a product, and managing the endless list of responsibilities that appear when a team is small.",
+      "I co-founded the company with colleagues from the Morgridge Institute for Research to commercialize a 3D printing platform for the K-12 market. The system combined a four-color 3D printer, a 3D scanner, and our own software so children could begin making objects quickly.",
+      "On the technical side, I handled much of the path generation, 3D scanning functionality, electronics prototyping, and machine experimentation. On the business side, I managed investor relations, fundraising, trade show exhibits, demonstrations, customer support, hiring, accounting, outreach, and whatever else needed doing that week.",
+      "That stretch made it very clear that I could wear a lot of hats, and also that there is a hard limit to how many hats one person should wear at the same time."
+    ],
+    "highlights": [
+      "Helped secure roughly $500,000 in angel investment.",
+      "Worked across both deep technical development and day-to-day company operations.",
+      "Learned firsthand how product design, fundraising, support, and staffing all collide inside a startup."
+    ],
+    "tools": ["SolidWorks", "Unity"],
+    "languages": ["C++", "C#"],
+    "notes": [
+      "Related patents: Three-Dimensional Printing System Using Dual Rotation Axes",
+      "Related patents: Fixed Printhead Fused Filament Fabrication Printer And Method",
+      "Related patents: 3D Printer And Printhead Unit With Multiple Filaments"
+    ]
+  },
+  {
+    "slug": "virulent-ios-game",
+    "title": "Virulent",
+    "period": "2009-2011",
+    "status": "Released",
+    "theme": "games",
+    "summary": "An educational iOS game project that blended science communication, grant work, team leadership, and game production into one early-career chapter.",
+    "tags": ["games", "education", "leadership", "unity"],
+    "body": [
+      "After graduating, I took a post-doctoral research position at the Morgridge Institute for Research. Part of that work involved helping an education research group build games based on science from other institute labs.",
+      "I worked with a small founding group from UW-Madison to write grants, prototype game concepts, run education outreach, and hire artists, developers, and designers. By the time I left, the group had grown from four people to more than twenty-five.",
+      "During that stretch I led the development of the group's first publicly released game, Virulent. I moved between stakeholder, Scrum Master, and developer responsibilities as needed, which meant translating among scientists, education experts, artists, programmers, and play-testers while still keeping the project moving.",
+      "The end result was a free educational game that reached more than 20,000 downloads. It did not satisfy every constituency perfectly, but it shipped, it found an audience, and it taught me a lot about collaborative product development."
+    ],
+    "highlights": [
+      "Led the first public game release for a growing educational games research group.",
+      "Balanced scientific accuracy, educational goals, and playability in the same product.",
+      "Used Scrum in a small team where roles constantly overlapped in practice."
+    ],
+    "tools": ["Unity"],
+    "languages": ["C#"]
+  }
+]
